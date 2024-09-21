@@ -1,0 +1,312 @@
+
+html {
+height: 100%;
+width: 100%;
+}
+
+body {
+background-image: linear-gradient(to right top, #34b38b, #a14d91, #e4657e, #ff9866, #ffd665);
+background-image: linear-gradient(to left bottom, #2ec489, #00baa1, #00afb2, #00a2ba, #0094b9, #0488b7, #1c7cb3, #3070ac, #4163a6, #51549c, #60448e, #6c327c);
+}
+
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+ .toggle {
+cursor: pointer;
+display: inline-block;
+} 
+
+.toggle-switch {
+display: inline-block;
+background: #140000;
+border-radius: 16px;
+width: 58px;
+height: 32px;
+position: relative;
+vertical-align: middle;
+transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+content: "";
+}
+
+.toggle-switch:before {
+display: block;
+background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: left 0.25s;
+        }
+
+        .toggle:hover .toggle-switch:before {
+            background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .toggle-checkbox:checked+.toggle-switch {
+            background: #FF8749;
+        }
+
+        .toggle-checkbox:checked+.toggle-switch:before {
+            left: 30px;
+        }
+
+        .toggle-checkbox {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .toggle-label {
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+        }
+
+        /* Gym Toggle */
+        .gym {
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .gym-switch {
+            display: inline-block;
+            background: #ccc;
+            border-radius: 16px;
+            width: 58px;
+            height: 32px;
+            position: relative;
+            vertical-align: middle;
+            transition: background 0.25s;
+        }
+
+        .gym-switch:before,
+        .gym-switch:after {
+            content: "";
+        }
+
+        .gym-switch:before {
+            display: block;
+            background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: left 0.25s;
+        }
+
+        .gym:hover .gym-switch:before {
+            background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .gym-checkbox:checked+.gym-switch {
+            background: #FF8749;
+        }
+
+        .gym-checkbox:checked+.gym-switch:before {
+            left: 30px;
+        }
+
+        .gym-checkbox {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .gym-label {
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+        }
+
+        /* ind Toggle */
+
+        .ind {
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .ind-switch {
+            display: inline-block;
+            background: #ccc;
+            border-radius: 16px;
+            width: 58px;
+            height: 32px;
+            position: relative;
+            vertical-align: middle;
+            transition: background 0.25s;
+        }
+
+        .ind-switch:before,
+        .ind-switch:after {
+            content: "";
+        }
+
+        .ind-switch:before {
+            display: block;
+            background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: left 0.25s;
+        }
+
+        .ind:hover .ind-switch:before {
+            background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .ind-checkbox:checked+.ind-switch {
+            background: #FF8749;
+        }
+
+        .ind-checkbox:checked+.ind-switch:before {
+            left: 30px;
+        }
+
+        .ind-checkbox {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .ind-label {
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+        }
+
+        /* Car Toggle */
+
+        .car {
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .car-switch {
+            display: inline-block;
+            background: #ccc;
+            border-radius: 16px;
+            width: 58px;
+            height: 32px;
+            position: relative;
+            vertical-align: middle;
+            transition: background 0.25s;
+        }
+
+        .car-switch:before,
+        .car-switch:after {
+            content: "";
+        }
+
+        .car-switch:before {
+            display: block;
+            background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: left 0.25s;
+        }
+
+        .car:hover .car-switch:before {
+            background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .car-checkbox:checked+.car-switch {
+            background: #FF8749;
+        }
+
+        .car-checkbox:checked+.car-switch:before {
+            left: 30px;
+        }
+
+        .car-checkbox {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .car-label {
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+        }
+
+        /* Jog Toggle */
+
+        .jog {
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .jog-switch {
+            display: inline-block;
+            background: #ccc;
+            border-radius: 16px;
+            width: 58px;
+            height: 32px;
+            position: relative;
+            vertical-align: middle;
+            transition: background 0.25s;
+        }
+
+        .jog-switch:before,
+        .jog-switch:after {
+            content: "";
+        }
+
+        .jog-switch:before {
+            display: block;
+            background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: left 0.25s;
+        }
+
+        .jog:hover .jog-switch:before {
+            background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .jog-checkbox:checked+.jog-switch {
+            background: #FF8749;
+        }
+
+        .jog-checkbox:checked+.jog-switch:before {
+            left: 30px;
+        }
+
+        .jog-checkbox {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .jog-label {
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+        }
